@@ -6,3 +6,8 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('adds 1 + 2 to equal 3', () => {
+  const sum = require('./sum');
+  expect(sum(1, 2)).toBe(3);
+});
